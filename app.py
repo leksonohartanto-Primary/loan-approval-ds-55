@@ -10,19 +10,20 @@ html_temp = """<div style="background-color:#000;padding:10px;border-radius:10px
                 <h4 style="color:#fff;text-align:center">Made for: Credit Team</h4> 
                 """
 
-desc_temp = """ ### Loan Prediction App 
+desc_temp = """
+                ### Loan Prediction App
                 This app is used by Credit team for deciding Loan Application
-                
+                    
                 #### Data Source
                 Kaggle: Link <Masukkan Link>
+                    
                 The content of this data:
-                <ul>
-                    <li>Gender: The gender of borrower</li>
-                    <li>Married: Status of Marriage of borrower</li>
-                    <li>Married: Whether the borrower have any independents</li>
-                    <li>Married: Applicant Inccome : How much borrower make money</li>
-                </ul>
-                """
+                - Gender: The gender of borrower
+                - Married: Status of Marriage of borrower
+                - Dependents: Whether the borrower has any dependents
+                - Applicant Income: How much borrower make money
+            """
+st.markdown(desc_temp)
 
 def main():
     stc.html(html_temp)
@@ -86,4 +87,5 @@ def predict(gender, married, dependent, education, self_employed, applicant_inco
 if __name__ == "__main__":
 
     main()
+
 
