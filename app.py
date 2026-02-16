@@ -59,8 +59,8 @@ def run_ml_app():
 
     #If button is clicked
     if button:
-        result = predict(gender, married, dependent, education, self_employed, applicant_income, coApplicant_income
-                         ,loan_amount, loan_amount_term, credit_history, property_area):
+        result = predict(gender, married, dependent, education, self_employed, applicant_income, coApplicant_income,
+                         loan_amount, loan_amount_term, credit_history, property_area):
         if result == 'Eligible':
             st.success(f"You are {result} for the loan")
         else:
@@ -84,4 +84,5 @@ def predict(gender, married, dependent, education, self_employed, applicant_inco
     return result
 
 if __name__ == "__main__":
+
     main()
