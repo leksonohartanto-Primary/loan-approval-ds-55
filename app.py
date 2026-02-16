@@ -23,7 +23,6 @@ desc_temp = """
                 - Dependents: Whether the borrower has any dependents
                 - Applicant Income: How much borrower make money
             """
-st.markdown(desc_temp)
 
 def main():
     stc.html(html_temp)
@@ -87,5 +86,6 @@ def predict(gender, married, dependent, education, self_employed, applicant_inco
 if __name__ == "__main__":
 
     main()
+
 
 
