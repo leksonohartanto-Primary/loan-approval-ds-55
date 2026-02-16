@@ -33,6 +33,7 @@ def main():
         st.subheader("Home")
         st.markdown(desc_temp, unsafe_allow_html=True)
     elif choice == "Machine Learning App":
+        st.subheader("Machine Learning App")
         run_ml_app()
 
 def run_ml_app():
@@ -86,6 +87,7 @@ def predict(gender, married, dependent, education, self_employed, applicant_inco
 if __name__ == "__main__":
 
     main()
+
 
 
 
